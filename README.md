@@ -260,13 +260,6 @@ Livros sem informações essenciais, como título ou preço, são descartados in
 
 Cada página possui seu próprio tratamento de exceções, permitindo que um erro em uma URL não interrompa a coleta das demais.
 
-📸 Demonstração
-Terminal
-
-Excel
-
-As imagens acima demonstram a execução do scraper e a formatação dos dados exportados.
-
 🔮 Melhorias futuras
  Detectar automaticamente o número total de páginas.
  Coletar todas as páginas automaticamente.
