@@ -3,8 +3,8 @@
 ## Descrição
 
 Web scraper em Python que acessa o site estático [books.toscrape.com](https://books.toscrape.com/), extrai informações de livros (título, preço, disponibilidade, avaliação e URL) e exporta os resultados para arquivos **CSV** e **Excel**. O projeto também oferece um filtro opcional por preço máximo e exibe um resumo estatístico da coleta no terminal.
+Projeto desenvolvido para praticar web scraping, manipulação de dados, exportação de arquivos e organização de um projeto Python.
 
-Este projeto foi desenvolvido como solução para o desafio técnico "Scraper de Preços Simples", de nível Entry.
 
 ## Tecnologias utilizadas
 
@@ -33,8 +33,6 @@ price_scraper/
 ├── README.md
 └── .gitignore
 ```
-
-> **Por que essa estrutura?** Para um projeto Entry, uma divisão em três módulos (`scraper`, `exporter`, `main`) já é suficiente para separar responsabilidades (coleta, tratamento/exportação e orquestração) sem introduzir complexidade desnecessária, como pacotes aninhados, camadas de configuração ou testes automatizados. Isso mantém o código fácil de ler e de apresentar em portfólio, sem parecer um projeto "inchado" para o nível proposto.
 
 ## Instalação
 
