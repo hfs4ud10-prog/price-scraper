@@ -51,11 +51,13 @@ price_scraper/
 │
 ├── requirements.txt    # Dependências do projeto
 ├── README.md           # Documentação
-└── .gitignore          # Arquivos ignorados pelo Git
+└── .gitignore          # Arquivos ignorados pelo Git 
 
-Os arquivos livros.csv e livros.xlsx são gerados automaticamente durante a execução e não são necessários no repositório.
+Os arquivos livros.csv e livros.xlsx são gerados automaticamente durante a execução e não são necessários no repositório. 
+```
+---
 
-⚙️ Instalação
+##⚙️ Instalação
 1. Clone o repositório
 git clone https://github.com/seu-usuario/price_scraper.git
 cd price_scraper
@@ -72,7 +74,7 @@ Linux/Mac:
 source .venv/bin/activate
 4. Instale as dependências
 pip install -r requirements.txt
-▶️ Execução
+##▶️ Execução
 
 Com o ambiente virtual ativado:
 
@@ -98,7 +100,7 @@ PAGINAS_PARA_COLETAR = [
     "https://books.toscrape.com/catalogue/page-3.html",
     "https://books.toscrape.com/catalogue/page-4.html",
 ]
-🔄 Funcionamento
+##🔄 Funcionamento
 
 O fluxo geral do projeto segue estas etapas:
 
@@ -136,7 +138,7 @@ A função recebe uma lista de URLs, coleta os livros encontrados em cada págin
 
 Caso uma página apresente um erro de conexão, timeout, erro HTTP ou não contenha livros, ela é ignorada e a coleta continua nas demais páginas.
 
-💰 Filtro por preço
+##💰 Filtro por preço
 
 O projeto possui um filtro opcional para limitar os resultados de acordo com o preço máximo.
 
@@ -155,7 +157,7 @@ Nesse exemplo, preco_maximo=30 mantém somente livros com preço igual ou inferi
 
 O filtro é aplicado antes da exportação, permitindo gerar arquivos contendo apenas os produtos dentro da faixa de preço desejada.
 
-📊 Resultados
+##📊 Resultados
 Excel
 
 O arquivo livros.xlsx recebe formatação para facilitar a leitura e análise dos dados:
@@ -192,7 +194,7 @@ index=False — evita a criação de uma coluna adicional contendo o índice do 
 
 Essa configuração facilita a abertura do CSV diretamente no Excel configurado para português/Brasil.
 
-🖥️ Exemplo de saída
+##🖥️ Exemplo de saída
 Iniciando coleta em 3 página(s)...
 
 Coletando: https://books.toscrape.com/
@@ -232,7 +234,7 @@ Distribuição das avaliações:
 
 Os valores acima são ilustrativos. A quantidade e os preços dos livros dependem das páginas coletadas durante a execução.
 
-🛡️ Tratamento de erros
+##🛡️ Tratamento de erros
 
 O projeto trata diferentes situações que podem ocorrer durante a coleta:
 
@@ -260,7 +262,7 @@ Livros sem informações essenciais, como título ou preço, são descartados in
 
 Cada página possui seu próprio tratamento de exceções, permitindo que um erro em uma URL não interrompa a coleta das demais.
 
-🔮 Melhorias futuras
+##🔮 Melhorias futuras
  Detectar automaticamente o número total de páginas.
  Coletar todas as páginas automaticamente.
  Armazenar os dados em SQLite ou PostgreSQL.
@@ -270,7 +272,7 @@ Cada página possui seu próprio tratamento de exceções, permitindo que um err
  Adicionar testes automatizados com pytest.
  Utilizar mocks para testar respostas HTTP.
  Implementar logging estruturado utilizando o módulo logging.
-📚 Sobre o projeto
+##📚 Sobre o projeto
 
 Este projeto utiliza o Books to Scrape, um site criado especificamente para praticar web scraping.
 
