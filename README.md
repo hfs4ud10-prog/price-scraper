@@ -74,6 +74,7 @@ Linux/Mac:
 source .venv/bin/activate
 4. Instale as dependências
 pip install -r requirements.txt
+---
 ##▶️ Execução
 
 Com o ambiente virtual ativado:
@@ -100,6 +101,7 @@ PAGINAS_PARA_COLETAR = [
     "https://books.toscrape.com/catalogue/page-3.html",
     "https://books.toscrape.com/catalogue/page-4.html",
 ]
+---
 ##🔄 Funcionamento
 
 O fluxo geral do projeto segue estas etapas:
@@ -137,6 +139,7 @@ livros = scrape_pages(urls)
 A função recebe uma lista de URLs, coleta os livros encontrados em cada página e retorna uma lista única com os resultados.
 
 Caso uma página apresente um erro de conexão, timeout, erro HTTP ou não contenha livros, ela é ignorada e a coleta continua nas demais páginas.
+---
 
 ##💰 Filtro por preço
 
@@ -156,6 +159,7 @@ df_baratos = filtrar_por_preco(
 Nesse exemplo, preco_maximo=30 mantém somente livros com preço igual ou inferior a £30.
 
 O filtro é aplicado antes da exportação, permitindo gerar arquivos contendo apenas os produtos dentro da faixa de preço desejada.
+---
 
 ##📊 Resultados
 Excel
@@ -193,6 +197,7 @@ encoding="utf-8-sig" — preserva corretamente acentos e caracteres especiais no
 index=False — evita a criação de uma coluna adicional contendo o índice do DataFrame.
 
 Essa configuração facilita a abertura do CSV diretamente no Excel configurado para português/Brasil.
+---
 
 ##🖥️ Exemplo de saída
 Iniciando coleta em 3 página(s)...
@@ -233,6 +238,7 @@ Distribuição das avaliações:
 ===================
 
 Os valores acima são ilustrativos. A quantidade e os preços dos livros dependem das páginas coletadas durante a execução.
+---
 
 ##🛡️ Tratamento de erros
 
@@ -261,6 +267,7 @@ Campos ausentes
 Livros sem informações essenciais, como título ou preço, são descartados individualmente sem interromper o restante da coleta.
 
 Cada página possui seu próprio tratamento de exceções, permitindo que um erro em uma URL não interrompa a coleta das demais.
+---
 
 ##🔮 Melhorias futuras
  Detectar automaticamente o número total de páginas.
@@ -272,6 +279,7 @@ Cada página possui seu próprio tratamento de exceções, permitindo que um err
  Adicionar testes automatizados com pytest.
  Utilizar mocks para testar respostas HTTP.
  Implementar logging estruturado utilizando o módulo logging.
+ ---
 ##📚 Sobre o projeto
 
 Este projeto utiliza o Books to Scrape, um site criado especificamente para praticar web scraping.
@@ -284,6 +292,7 @@ HTTP requests
 Parsing de HTML
 Pandas
 Manipulação de dados
+---
 Exportação CSV/Excel
 Tratamento de exceções
 Organização de código
