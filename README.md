@@ -41,7 +41,7 @@ price_scraper/
 1. Clone ou baixe este projeto:
 
 ```bash
-git clone https://github.com/seu-usuario/price_scraper.git
+git clone https://github.com/hfs4ud10-prog/price_scraper.git
 cd price_scraper
 ```
 
